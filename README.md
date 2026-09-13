@@ -16,9 +16,6 @@
 
 You are able to download a ZIP using the green "< > Code" button above then selecting "Download ZIP".  Or you may view the files and create them yourself.
 
-```text
-[Xataface Application Root]/themes/saas_clean
-
 ### 1. Upload Theme Directory
 
 Upload the `saas_clean` folder (containing two files and one directory) to your application's `themes` directory. If the `themes` directory does not exist, create it in your root Xataface folder:
