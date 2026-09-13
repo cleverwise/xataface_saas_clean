@@ -1,0 +1,1745 @@
+/* ==========================================================================
+   SaaS Clean extension for G2 navigation skin
+   |- Generated, edited, and testing by Jeremy O'Connell
+   |- Version: 1.0 (12 September 2026)
+   |- BSD 3-Clause License - Copyright (c) 2017, Jeremy OConnell
+   |- Distributed using the BSD
+   |- Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+   |- 1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+   |- 2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+   |- 3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+   |- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+    ========================================================================== */
+
+:root {
+    --saas-text: #3c4043;
+    --saas-text-muted: #5f6368;
+    --saas-border: #dadce0;
+    --saas-hover: #f1f3f4;
+    --saas-selected: #e8f0fe;
+    --saas-blue: #1a73e8;
+    --saas-white: #ffffff;
+}
+
+/* ==========================================================================
+   PORTAL MESSAGES
+   ========================================================================== */
+
+.portalMessage {
+    background: #f8f9fa !important;
+    border: 1px solid #dadce0 !important;
+    border-left: 4px solid #34a853 !important;
+    border-radius: 6px !important;
+    box-shadow: none !important;
+    margin: 12px 0 !important;
+    padding: 10px 14px !important;
+}
+
+
+/* Remove the old G2 icon / warning treatment */
+
+.portalMessage,
+.portalMessage li {
+    background-image: none !important;
+}
+
+
+/* Message text */
+
+.portalMessage ul {
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+}
+
+.portalMessage li {
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #3c4043 !important;
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif !important;
+    font-size: 13px !important;
+    line-height: 20px !important;
+}
+
+/* ==========================================================================
+   TOP MENU AREA
+   ========================================================================== */
+
+#top-menu-bar {
+    background: var(--saas-white) !important;
+    border-bottom: 1px solid var(--saas-border) !important;
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif !important;
+    font-size: 14px !important;
+}
+
+
+/* ==========================================================================
+   LEFT MENU
+   ========================================================================== */
+
+#top-left-menu-bar {
+    background: var(--saas-white) !important;
+}
+
+#top-left-menu-bar > ul {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#top-left-menu-bar > ul > li {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+/* Main navigation links */
+
+#top-left-menu-bar > ul > li > a {
+    display: block !important;
+    padding: 9px 13px !important;
+    color: var(--saas-text-muted) !important;
+    background: transparent !important;
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    line-height: 20px !important;
+    text-decoration: none !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+    border-radius: 4px !important;
+}
+
+
+/* Hover */
+
+#top-left-menu-bar > ul > li > a:hover {
+    color: var(--saas-text) !important;
+    background: var(--saas-hover) !important;
+}
+
+
+/* ==========================================================================
+   DROPDOWN MENUS
+   ========================================================================== */
+
+#top-left-menu-bar .xf-dropdown {
+    position: relative !important;
+}
+
+
+/*
+ * We deliberately leave the existing G2 dropdown behavior alone where
+ * possible. These rules only establish the visual appearance.
+ */
+
+#top-left-menu-bar .action-sub-menu {
+    min-width: 190px !important;
+    margin: 0 !important;
+    padding: 6px 0 !important;
+    background: var(--saas-white) !important;
+    border: 1px solid var(--saas-border) !important;
+    border-radius: 4px !important;
+    box-shadow:
+        0 2px 6px rgba(60, 64, 67, 0.15) !important;
+    list-style: none !important;
+    z-index: 1000 !important;
+}
+
+
+/* Dropdown items */
+
+#top-left-menu-bar .action-sub-menu li {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#top-left-menu-bar .action-sub-menu a {
+    display: block !important;
+    padding: 7px 16px !important;
+    color: var(--saas-text) !important;
+    background: transparent !important;
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 20px !important;
+    text-decoration: none !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+
+/* Dropdown hover */
+
+#top-left-menu-bar .action-sub-menu a:hover {
+    color: var(--saas-text) !important;
+    background: var(--saas-hover) !important;
+}
+
+
+/* ==========================================================================
+   DROPDOWN ARROW
+   ========================================================================== */
+
+/*
+ * G2 currently supplies the Material Icons arrow.
+ * Leave it alone for now. We can decide later whether to replace it
+ * with a simpler Unicode/CSS arrow.
+ */
+
+#top-left-menu-bar .xf-dropdown .material-icons {
+    font-size: 16px !important;
+    vertical-align: middle !important;
+}
+
+
+/* ==========================================================================
+   RIGHT MENU
+   ========================================================================== */
+
+#top-right-menu-bar ul.right {
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#top-right-menu-bar ul.right > li {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#top-right-menu-bar ul.right > li > a.trigger {
+    display: block !important;
+    padding: 8px 10px !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    color: var(--saas-text-muted) !important;
+    text-decoration: none !important;
+}
+
+
+/* Full menu-cell hover */
+
+#top-right-menu-bar ul.right > li:hover {
+    background: #f1f3f4 !important;
+}
+
+#top-right-menu-bar ul.right > li:hover > a.trigger {
+    background: transparent !important;
+    color: var(--saas-text) !important;
+}
+
+/* ==========================================================================
+   RIGHT MENU DROPDOWNS
+   ========================================================================== */
+
+/* Dropdown container */
+
+#top-right-menu-bar ul.right > li > ul.action-sub-menu {
+    background: #ffffff !important;
+    border: 0 !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12) !important;
+    padding: 4px 0 !important;
+}
+
+
+/* Dropdown items */
+
+#top-right-menu-bar ul.right > li > ul.action-sub-menu > li {
+    background: #ffffff !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+/* Dropdown links */
+
+#top-right-menu-bar ul.right > li > ul.action-sub-menu > li > a {
+    display: block !important;
+    background: #ffffff !important;
+    color: var(--saas-text) !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    padding: 8px 14px !important;
+    text-decoration: none !important;
+}
+
+
+/* Hover */
+
+#top-right-menu-bar ul.right > li > ul.action-sub-menu > li:hover > a {
+    background: #f1f3f4 !important;
+    color: var(--saas-text) !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+
+/* Currently selected dropdown item */
+
+#top-right-menu-bar ul.right > li > ul.action-sub-menu > li.selected {
+    background: #f1f3f4 !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+#top-right-menu-bar ul.right > li > ul.action-sub-menu > li.selected > a {
+    background: #f1f3f4 !important;
+    color: var(--saas-text) !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+/* ==========================================================================
+   ACTION LABELS
+   ========================================================================== */
+
+.action-label {
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif !important;
+}
+
+/* ==========================================================================
+   SaaS Clean - Controls & Buttons
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   General buttons
+   -------------------------------------------------------------------------- */
+
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+.button,
+.dataface-action-button {
+    box-sizing: border-box !important;
+    min-height: 32px !important;
+    padding: 5px 14px !important;
+    background: #ffffff !important;
+    color: #3c4043 !important;
+    border: 1px solid #dadce0 !important;
+    border-radius: 4px !important;
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    line-height: 20px !important;
+    text-decoration: none !important;
+    cursor: pointer !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+
+/* Hover */
+
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+.button:hover,
+.dataface-action-button:hover {
+    background: #f8f9fa !important;
+    color: #202124 !important;
+    border-color: #c4c7c5 !important;
+    box-shadow: none !important;
+}
+
+
+/* Active */
+
+button:active,
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+.button:active,
+.dataface-action-button:active {
+    background: #f1f3f4 !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   Primary actions
+   -------------------------------------------------------------------------- */
+
+input[type="submit"].primary,
+button.primary,
+.button.primary,
+.dataface-action-button.primary {
+    background: #1a73e8 !important;
+    color: #ffffff !important;
+    border-color: #1a73e8 !important;
+}
+
+input[type="submit"].primary:hover,
+button.primary:hover,
+.button.primary:hover,
+.dataface-action-button.primary:hover {
+    background: #1769d2 !important;
+    color: #ffffff !important;
+    border-color: #1769d2 !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   Form fields
+   -------------------------------------------------------------------------- */
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="time"],
+select,
+textarea {
+    box-sizing: border-box !important;
+    min-height: 32px !important;
+    padding: 5px 9px !important;
+    background: #ffffff !important;
+    color: #202124 !important;
+    border: 1px solid #dadce0 !important;
+    border-radius: 3px !important;
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif !important;
+    font-size: 13px !important;
+    box-shadow: none !important;
+}
+
+
+/* Form focus */
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="date"]:focus,
+input[type="datetime-local"]:focus,
+input[type="time"]:focus,
+select:focus,
+textarea:focus {
+    outline: none !important;
+    border-color: #1a73e8 !important;
+    box-shadow: 0 0 0 1px #1a73e8 !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   Disabled controls
+   -------------------------------------------------------------------------- */
+
+button:disabled,
+input:disabled,
+select:disabled,
+textarea:disabled,
+.button.disabled {
+    background: #f8f9fa !important;
+    color: #9aa0a6 !important;
+    border-color: #e0e0e0 !important;
+    cursor: default !important;
+    box-shadow: none !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   Remove old-school 3D effects from common G2 controls
+   -------------------------------------------------------------------------- */
+
+button,
+input,
+select,
+textarea,
+.button,
+.dataface-action-button {
+    text-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+/* ==========================================================================
+   FORM ACTION BAR
+   ========================================================================== */
+
+.xf-button-bar-actions {
+    margin-top: 12px !important;
+    padding: 10px 0 !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+
+/* Keep the actions together without forcing a particular layout */
+
+.xf-button-bar-actions ul {
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+}
+
+
+/* Individual form actions */
+
+.xf-button-bar-actions li {
+    margin: 0 4px 0 0 !important;
+    padding: 0 !important;
+}
+
+
+/* The actual clickable action */
+
+.xf-button-bar-actions li > a {
+    display: inline-block !important;
+    padding: 6px 14px !important;
+    background: #ffffff !important;
+    color: #3c4043 !important;
+    border: 1px solid #dadce0 !important;
+    border-radius: 4px !important;
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    line-height: 18px !important;
+    text-decoration: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+
+/* Hover */
+
+.xf-button-bar-actions li > a:hover {
+    background: #f1f3f4 !important;
+    color: #202124 !important;
+    border-color: #c4c7c5 !important;
+}
+
+
+/* Save */
+
+.xf-button-bar-actions li.xf-save-new-record > a,
+.xf-button-bar-actions li[id^="save_"] > a {
+    background: #1a73e8 !important;
+    color: #ffffff !important;
+    border-color: #1a73e8 !important;
+}
+
+
+.xf-button-bar-actions li.xf-save-new-record > a:hover,
+.xf-button-bar-actions li[id^="save_"] > a:hover {
+    background: #1769d2 !important;
+    color: #ffffff !important;
+    border-color: #1769d2 !important;
+}
+
+/* ==========================================================================
+   TABLE ACTIONS
+   ========================================================================== */
+
+#table_actions {
+    margin: 10px 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+#table_actions > li {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+/* New / featured table action */
+
+#table_actions > li > a {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    min-height: 32px !important;
+    box-sizing: border-box !important;
+    padding: 6px 14px !important;
+    background: #ffffff !important;
+    color: #3c4043 !important;
+    border: 1px solid #dadce0 !important;
+    border-radius: 4px !important;
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    line-height: 18px !important;
+    text-decoration: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+#table_actions > li > a:hover {
+    background: #f1f3f4 !important;
+    color: #202124 !important;
+    border-color: #c4c7c5 !important;
+}
+
+
+/* The add icon */
+
+#table_actions .material-icons {
+    font-size: 17px !important;
+    line-height: 18px !important;
+}
+
+/* ==========================================================================
+   Xataface branding
+   ========================================================================== */
+
+#xf-logo {
+    display: none !important;
+}
+
+/* ==========================================================================
+   SaaS Clean - Data Listing
+   Appearance only
+   ========================================================================== */
+
+
+/* --------------------------------------------------------------------------
+   Table headers
+   -------------------------------------------------------------------------- */
+
+table.listing th,
+table.dataface-view-table th {
+    background: #f8f9fa !important;
+    color: #5f6368 !important;
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    line-height: 18px !important;
+    text-align: left !important;
+    padding: 7px 9px !important;
+    border-top: 0 !important;
+    border-bottom: 1px solid #dadce0 !important;
+    border-left: 0 !important;
+    border-right: 1px solid #f1f3f4 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   Table cells
+   -------------------------------------------------------------------------- */
+
+table.listing td,
+table.dataface-view-table td {
+    background: #ffffff !important;
+    color: #3c4043 !important;
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif !important;
+    font-size: 13px !important;
+    line-height: 18px !important;
+    padding: 7px 9px !important;
+    border-top: 0 !important;
+    border-bottom: 1px solid #f1f3f4 !important;
+    border-left: 0 !important;
+    border-right: 1px solid #f8f9fa !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+/* --------------------------------------------------------------------------
+   Alternating data rows
+   Xataface/G2 supplies "odd" and "even" on the record rows.
+   -------------------------------------------------------------------------- */
+
+tr.listing.odd td {
+    background: #ffffff !important;
+}
+
+tr.listing.even td {
+    background: #f7f8fa !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   Row hover
+   -------------------------------------------------------------------------- */
+
+tr.listing.odd:hover td,
+tr.listing.even:hover td {
+    background: #eef3f8 !important;
+}
+
+/* --------------------------------------------------------------------------
+   Selected/current record
+   -------------------------------------------------------------------------- */
+
+/*
+ * G2's exact selected-row class may vary depending on the view.
+ * These cover the common current/selected states without changing layout.
+ */
+
+table.listing tr.selected td,
+table.listing tr.current td,
+table.listing tr.active td,
+table.dataface-view-table tr.selected td,
+table.dataface-view-table tr.current td,
+table.dataface-view-table tr.active td {
+    background: #e8f0fe !important;
+    color: #202124 !important;
+    border-bottom-color: #d2e3fc !important;
+}
+
+
+/* Selected row hover */
+
+table.listing tr.selected:hover td,
+table.listing tr.current:hover td,
+table.listing tr.active:hover td,
+table.dataface-view-table tr.selected:hover td,
+table.dataface-view-table tr.current:hover td,
+table.dataface-view-table tr.active:hover td {
+    background: #e8f0fe !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   Remove 3D effects from listing components
+   -------------------------------------------------------------------------- */
+
+table.listing,
+table.dataface-view-table,
+table.listing th,
+table.listing td,
+table.dataface-view-table th,
+table.dataface-view-table td {
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+/* ==========================================================================
+   RESULTS TABLE FRAME
+   ========================================================================== */
+
+#result_list {
+    outline: 1px solid #dadce0 !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    border-collapse: collapse !important;
+}
+
+/* ==========================================================================
+   RESULT LIST ACTION BAR
+   ========================================================================== */
+
+.result-list-header.result-list-bar.xf-button-bar {
+    background: #ffffff !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    padding: 8px 0 !important;
+}
+
+
+/* Inner action area */
+
+.result-list-header .result-list-actions {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+
+/* Action list */
+
+.result-list-header ul.tableActions {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* ==========================================================================
+   RESULT LIST FOOTER
+   ========================================================================== */
+
+.result-list-footer.result-list-bar.xf-button-bar {
+    background: #ffffff !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    padding: 8px 0 !important;
+}
+
+
+.result-list-footer .result-list-actions {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+
+.result-list-footer .xf-button-bar-actions {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+/* ==========================================================================
+   DATA GRID BORDER
+   ========================================================================== */
+
+#result_list {
+    border: 1px solid #dadce0 !important;
+    border-collapse: collapse !important;
+    box-shadow: none !important;
+}
+
+#result_list th,
+#result_list td {
+    box-shadow: none !important;
+}
+
+/* ==========================================================================
+   MAIN CONTENT AREA
+   ========================================================================== */
+
+#region-content {
+    background: #ffffff !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+/* ==========================================================================
+   TABLE QUICKLINKS Ã¢â‚¬â€ FLAT GOOGLE-STYLE NAVIGATION
+   ========================================================================== */
+
+#xf-table-quicklinks {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+#xf-table-quicklinks ul,
+#xf-table-quicklinks li,
+#xf-table-quicklinks a {
+    background: #ffffff !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    padding: 6px 0px 6px 0px;
+    margin-right: 2px;
+}
+
+/* Normal quicklinks */
+
+#xf-table-quicklinks li > a {
+    color: #5f6368 !important;
+    border: 0 !important;
+}
+
+/* Hover */
+
+#xf-table-quicklinks li:hover > a {
+    background: #F2F2F2 !important;
+    color: #202124 !important;
+    border-radius: 0px 10px 10px 0;
+}
+
+/* Selected */
+
+#xf-table-quicklinks li.selected {
+    background: #f1f3f4 !important;
+    box-shadow: none !important;
+    border: 0 !important;
+    border-radius: 0 16px 16px 0 !important;
+}
+
+#xf-table-quicklinks li.selected > a {
+    background: transparent !important;
+    color: #202124 !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+/* ==========================================================================
+   SEARCH
+   ========================================================================== */
+
+#top-search-form {
+    padding: 8px 0 12px 0 !important;
+}
+
+
+/* Search input */
+
+#top-search-form .xf-search-field {
+    height: 34px !important;
+    box-sizing: border-box !important;
+    padding: 6px 10px !important;
+    background: #ffffff !important;
+    color: #202124 !important;
+    border: 1px solid #dadce0 !important;
+    border-radius: 4px !important;
+    box-shadow: none !important;
+}
+
+
+/* Search button */
+
+#top-search-form .xf-search-button {
+    height: 34px !important;
+    box-sizing: border-box !important;
+    padding: 6px 14px !important;
+    background: #ffffff !important;
+    color: #3c4043 !important;
+    border: 1px solid #dadce0 !important;
+    border-radius: 4px !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+}
+
+#top-search-form .xf-search-button:hover {
+    background: #f1f3f4 !important;
+    border-color: #c4c7c5 !important;
+}
+
+/* Advanced Search toggle */
+
+#top-search-form .xf-show-advanced-find {
+    display: inline-block !important;
+    margin-left: 8px !important;
+    padding: 6px 4px !important;
+    color: #1a73e8 !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    cursor: pointer !important;
+}
+
+#top-search-form .xf-show-advanced-find:hover {
+    color: #1557b0 !important;
+    text-decoration: underline !important;
+}
+
+/* ==========================================================================
+   ADVANCED SEARCH
+   ========================================================================== */
+
+.xf-advanced-find {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    margin-left: 15px;
+}
+
+.xf-advanced-find-form {
+    background: #f8f9fa !important;
+    border: 1px solid #dadce0 !important;
+    border-radius: 6px !important;
+    box-shadow: none !important;
+    margin: 12px 0 16px 0 !important;
+    padding: 12px 16px 16px 16px !important;
+}
+
+
+/* Advanced Search title */
+
+.xf-advanced-find-form legend {
+    background: #f8f9fa !important;
+    color: #3c4043 !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    padding: 0 8px !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+}
+
+
+/* Advanced Search fields */
+
+.xf-advanced-find-form-table {
+    width: 100% !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+.xf-advanced-find-form-table td {
+    background: transparent !important;
+    border: 0 !important;
+    padding: 8px 12px !important;
+}
+
+/* Advanced search inputs */
+
+.xf-advanced-find-form input[type="text"],
+.xf-advanced-find-form input[type="number"],
+.xf-advanced-find-form select,
+.xf-advanced-find-form textarea {
+    background: #ffffff !important;
+    color: #202124 !important;
+    border: 1px solid #dadce0 !important;
+    border-radius: 4px !important;
+    box-shadow: none !important;
+}
+
+.xf-advanced-find-form input:focus,
+.xf-advanced-find-form select:focus,
+.xf-advanced-find-form textarea:focus {
+    border-color: #a8c7fa !important;
+    box-shadow: 0 0 0 1px #a8c7fa !important;
+    outline: none !important;
+}
+
+/* ==========================================================================
+   RECORD ACTION BAR
+   ========================================================================== */
+
+#record-actions {
+    background: #ffffff !important;
+}
+
+#record-actions,
+#record-actions > li {
+    box-shadow: none !important;
+}
+
+.xf-button-bar {
+    background: #ffffff !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+.xf-button-bar-actions {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+/* ==========================================================================
+   RECORD TITLE
+   ========================================================================== */
+
+.dataface-sections-top {
+    background: #ffffff !important;
+    border: 1px solid #e0e3e7 !important;
+    border-radius: 6px !important;
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.10) !important;
+    margin: 10px 0 14px 0 !important;
+    padding: 0 !important;
+}
+
+.dataface-sections-top h3 {
+    margin: 0 !important;
+    padding: 12px 14px !important;
+    color: #202124 !important;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+/* ==========================================================================
+   COLLAPSIBLE SECTIONS
+   ========================================================================== */
+
+.movable {
+    background: #ffffff !important;
+    border: 1px solid #dadce0 !important;
+    border-radius: 6px !important;
+    box-shadow: none !important;
+    margin: 12px 0 !important;
+}
+
+.movable > h3.Dataface_collapsible_sidebar {
+    background: #f8f9fa !important;
+    color: #202124 !important;
+    border: 0 !important;
+    border-bottom: 1px solid #e0e3e7 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    padding: 7px 10px !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+}
+
+.movable > h3 .expansion-handle {
+    width: 11px !important;
+    height: 11px !important;
+    margin-right: 4px !important;
+    opacity: 0.75 !important;
+}
+
+/* ==========================================================================
+   PAGINATION
+   ========================================================================== */
+
+.result-stats {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    color: #5f6368 !important;
+    font-size: 12px !important;
+    line-height: 34px !important;
+}
+
+.result-stats .start,
+.result-stats .end,
+.result-stats .found {
+    color: #3c4043 !important;
+    font-weight: 500 !important;
+}
+
+
+/* Records-per-page control */
+
+.result-stats .limit-field {
+    display: inline-block !important;
+    margin-left: 12px !important;
+    color: #5f6368 !important;
+}
+
+.result-stats .limit-field input {
+    height: 26px !important;
+    width: 38px !important;
+    box-sizing: border-box !important;
+    padding: 3px 6px !important;
+    background: #ffffff !important;
+    color: #202124 !important;
+    border: 1px solid #dadce0 !important;
+    border-radius: 4px !important;
+    box-shadow: none !important;
+    text-align: center !important;
+}
+
+/* ==========================================================================
+   PAGINATION ARROWS
+   ========================================================================== */
+
+.prev-link img,
+.next-link img {
+    display: none !important;
+}
+
+.prev-link a,
+.next-link a {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 38px !important;
+    height: 34px !important;
+    box-sizing: border-box !important;
+    background: #ffffff !important;
+    border: 1px solid #dadce0 !important;
+    border-radius: 6px !important;
+    box-shadow: none !important;
+    color: #5f6368 !important;
+    text-decoration: none !important;
+}
+
+
+.prev-link a::before {
+    content: "‹" !important;
+    font-size: 24px !important;
+    line-height: 1 !important;
+}
+
+
+.next-link a::before {
+    content: "›" !important;
+    font-size: 24px !important;
+    line-height: 1 !important;
+}
+
+
+.prev-link a:hover,
+.next-link a:hover {
+    background: #f1f3f4 !important;
+    color: #202124 !important;
+    border-color: #dadce0 !important;
+}
+
+/* ==========================================================================
+   FOOTER / XATAFACE CREDIT
+   ========================================================================== */
+
+.fineprint {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    color: #80868b !important;
+    text-align: left !important;
+    font-size: 11px !important;
+    line-height: 1.6 !important;
+    padding: 12px 16px !important;
+    margin: 0 !important;
+}
+
+/* ==========================================================================
+   RECORD LIMIT POPUP
+   ========================================================================== */
+
+.xf-change-limit-dialog {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    color: #3c4043 !important;
+    border: 1px solid #dadce0 !important;
+    border-radius: 6px !important;
+    padding: 10px 12px !important;
+    box-shadow: 0 2px 6px rgba(60, 64, 67, 0.15) !important;
+    font-size: 12px !important;
+}
+
+.xf-change-limit-dialog p {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.xf-change-limit-dialog input {
+    background: #ffffff !important;
+    color: #202124 !important;
+    border: 1px solid #dadce0 !important;
+    border-radius: 4px !important;
+    box-shadow: none !important;
+    padding: 3px 5px !important;
+    font-size: 12px !important;
+}
+
+.xf-change-limit-dialog input:focus {
+    border-color: #a8c7fa !important;
+    box-shadow: 0 0 0 1px #a8c7fa !important;
+    outline: none !important;
+}
+
+/* ==========================================================================
+   LEGACY "THIS RECORD" PORTLET
+   ========================================================================== */
+
+.portlet {
+    display: none !important;
+}
+
+/* ==========================================================================
+   RELATIONSHIP SECTION
+   ========================================================================== */
+
+/* Wrapper */
+#leftsidebar_audits__relationship_0 {
+    margin: 12px 0 0 0 !important;
+    background: #ffffff !important;
+    border: 1px solid #dadce0 !important;
+    border-radius: 6px !important;
+    box-shadow: none !important;
+    overflow: hidden !important;
+}
+
+/* Heading */
+#leftsidebar_audits__relationship_0 > h3 {
+    margin: 0 !important;
+    padding: 9px 12px 12px 0px !important;
+    background: #f8f9fa !important;
+    border: 0 !important;
+    border-bottom: 1px solid #dadce0 !important;
+    color: #3c4043 !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+/* Content */
+#leftsidebar_audits__relationship_0 > div {
+    background: #ffffff !important;
+    padding: 0 6px 0px 6px !important;
+    border: 0 !important;
+}
+#leftsidebar_audits__relationship_0 > div a {
+    color: #4B81E3 !important;
+    padding-right: 6px;
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    text-decoration: none !important;
+}
+
+
+/* See All link */
+#leftsidebar_audits__relationship_0 > h3 a {
+    color: #5f6368 !important;
+    padding-right: 6px;
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    text-decoration: none !important;
+    text-transform: capitalize;
+}
+
+#leftsidebar_audits__relationship_0 > h3 a:hover {
+    color: #202124 !important;
+    text-decoration: none !important;
+    border: 0px !important;
+}
+
+/* ==========================================================================
+   RECORD SUBTABS
+   ========================================================================== */
+
+.record-subtabs {
+    margin: 0 0 20px 0 !important;
+    padding: 0 !important;
+    border-bottom: 1px solid #dadce0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.record-subtabs ul {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+.record-subtabs li {
+    display: inline-block !important;
+    margin: 0 2px 0 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+.record-subtabs li > a {
+    display: block !important;
+    padding: 7px 12px !important;
+    background: transparent !important;
+    color: #5f6368 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+}
+
+.record-subtabs li > a:hover {
+    background: #f1f3f4 !important;
+    color: #202124 !important;
+}
+
+.record-subtabs li.selected > a {
+    background: #f1f3f4 !important;
+    color: #202124 !important;
+    border-bottom: 2px solid #dadce0 !important;
+    font-weight: 600 !important;
+}
+
+/* ==========================================================================
+   RECORD SUBTABS Ã¢â‚¬â€ REMOVE LEGACY DIVIDER
+   ========================================================================== */
+
+.record-subtabs {
+    border-bottom: 0 !important;
+    box-shadow: none !important;
+}
+
+/* ==========================================================================
+   RECORD TITLE
+   ========================================================================== */
+
+.dataface-sections-top {
+    margin: 0 0 16px 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+.dataface-sections-top h3 {
+    margin: 0 !important;
+    padding: 10px 16px !important;
+    background: #ffffff !important;
+    border: 1px solid #dadce0 !important;
+    border-radius: 6px !important;
+    color: #202124 !important;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    line-height: 1.4 !important;
+    box-shadow: 0 1px 2px rgba(60,64,67,.08) !important;
+    text-shadow: none !important;
+}
+
+/* ==========================================================================
+   RECORD SEARCH Ã¢â‚¬â€ LEFT COLUMN
+   ========================================================================== */
+
+#record-search {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    margin: 12px 0 16px 0 !important;
+    padding: 0 8px !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+/* Search icon */
+
+#record-search img {
+    width: 14px !important;
+    height: 14px !important;
+    margin: 0 !important;
+    opacity: 0.65 !important;
+}
+
+/* Search input */
+
+#record-search input[type="text"] {
+    box-sizing: border-box !important;
+    width: 140px !important;
+    height: 32px !important;
+    margin: 0 !important;
+    padding: 6px 9px !important;
+    background: #ffffff !important;
+    color: #202124 !important;
+    border: 1px solid #dadce0 !important;
+    border-radius: 4px !important;
+    box-shadow: none !important;
+    font-size: 13px !important;
+}
+
+#record-search input[type="text"]:focus {
+    outline: none !important;
+    border-color: #9aa0a6 !important;
+    box-shadow: 0 0 0 1px #9aa0a6 !important;
+}
+
+/* Search button */
+
+#record-search input[type="button"] {
+    box-sizing: border-box !important;
+    height: 32px !important;
+    margin: 0 !important;
+    padding: 0 12px !important;
+    background: #ffffff !important;
+    color: #3c4043 !important;
+    border: 1px solid #dadce0 !important;
+    border-radius: 4px !important;
+    box-shadow: none !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    cursor: pointer !important;
+}
+
+#record-search input[type="button"]:hover {
+    background: #f1f3f4 !important;
+    color: #202124 !important;
+}
+
+/* ==========================================================================
+   RELATED RECORD RESULTS TABLE
+   ========================================================================== */
+
+#relatedList {
+    width: 100% !important;
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+    background: #ffffff !important;
+    border: 1px solid #dadce0 !important;
+    border-radius: 6px !important;
+    box-shadow: none !important;
+    overflow: hidden !important;
+}
+
+/* Header */
+
+#relatedList thead th {
+    background: #f8f9fa !important;
+    color: #3c4043 !important;
+    border-bottom: 1px solid #dadce0 !important;
+    border-right: 1px solid #f1f3f4 !important;
+    padding: 8px 10px !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    white-space: nowrap !important;
+}
+
+#relatedList thead th:last-child {
+    border-right: 0 !important;
+}
+
+/* Cells */
+
+#relatedList tbody td {
+    padding: 8px 10px !important;
+    background: #ffffff !important;
+    color: #3c4043 !important;
+    border-bottom: 1px solid #f1f3f4 !important;
+    border-right: 1px solid #f1f3f4 !important;
+    font-size: 13px !important;
+    box-shadow: none !important;
+}
+
+#relatedList tbody td:last-child {
+    border-right: 0 !important;
+}
+
+#relatedList tbody tr:last-child td {
+    border-bottom: 0 !important;
+}
+
+/* Alternating rows */
+
+#relatedList tbody tr:nth-child(even) td {
+    background: #f8f9fa !important;
+}
+
+#relatedList tbody tr:nth-child(odd) td {
+    background: #ffffff !important;
+}
+
+/* Row hover */
+
+#relatedList tbody tr:hover td {
+    background: #f1f3f4 !important;
+}
+
+/* ==========================================================================
+   ADVANCED SEARCH Ã¢â‚¬â€ RELATIONSHIP SUBSECTIONS
+   ========================================================================== */
+
+.xf-related-find-form-panel {
+    margin: 18px 0 0 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+/* Relationship heading */
+
+.xf-related-find-form-panel > h3 {
+    margin: 0 0 10px 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    color: #202124 !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    line-height: 1.4 !important;
+}
+
+/* ==========================================================================
+   HELP / JQUERY UI DIALOG
+   ========================================================================== */
+
+.ui-dialog {
+    width: 850px !important;
+    max-width: calc(100vw - 40px) !important;
+    background: #ffffff !important;
+    border: 1px solid #dadce0 !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.16) !important;
+    padding: 0 !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   Dialog title bar
+   -------------------------------------------------------------------------- */
+
+.ui-dialog .ui-dialog-titlebar {
+    background: #f8f9fa !important;
+    border: 0 !important;
+    border-bottom: 1px solid #dadce0 !important;
+    border-radius: 8px 8px 0 0 !important;
+    padding: 11px 14px !important;
+}
+
+
+.ui-dialog .ui-dialog-title {
+    color: #202124 !important;
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   Close button
+   -------------------------------------------------------------------------- */
+
+.ui-dialog .ui-dialog-titlebar-close {
+    top: 50% !important;
+    right: 10px !important;
+    transform: translateY(-50%) !important;
+    width: 28px !important;
+    height: 28px !important;
+    margin: 0 !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    border-radius: 4px !important;
+}
+
+
+.ui-dialog .ui-dialog-titlebar-close:hover {
+    background: #e8eaed !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   Dialog content
+   -------------------------------------------------------------------------- */
+
+.ui-dialog .ui-dialog-content {
+    background: #ffffff !important;
+    border: 0 !important;
+    padding: 20px 24px !important;
+    color: #3c4043 !important;
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif !important;
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    height: auto !important;
+    max-height: calc(100vh - 130px) !important;
+    overflow-y: auto !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   Help document typography
+   -------------------------------------------------------------------------- */
+
+.ui-dialog .ui-dialog-content h1 {
+    margin: 0 0 16px 0 !important;
+    color: #202124 !important;
+    font-size: 22px !important;
+    font-weight: 500 !important;
+}
+
+
+.ui-dialog .ui-dialog-content h2 {
+    margin: 24px 0 10px 0 !important;
+    color: #202124 !important;
+    font-size: 17px !important;
+    font-weight: 500 !important;
+}
+
+
+.ui-dialog .ui-dialog-content p {
+    margin: 0 0 14px 0 !important;
+}
+
+
+.ui-dialog .ui-dialog-content ol,
+.ui-dialog .ui-dialog-content ul {
+    margin-top: 8px !important;
+    margin-bottom: 16px !important;
+    padding-left: 24px !important;
+}
+
+
+.ui-dialog .ui-dialog-content li {
+    margin-bottom: 7px !important;
+}
