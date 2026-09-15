@@ -1,6 +1,6 @@
 # SAAS_Clean Xataface Theme Extension
 
-`SAAS_Clean` delivers a modern SaaS/Gmail-inspired visual overhaul for Xataface applications. It features a flat, minimal interface designed to stay out of the user's way. Custom application headers can be added seamlessly using standard Xataface hooks.
+`SAAS_Clean` delivers a modern SaaS/Gmail-inspired visual overhaul for Xataface applications. It features a flat, minimal interface designed to stay out of the user's way. Custom application headers can be added seamlessly using standard Xataface hooks (**global_header.html** file).
 
 ## Prerequisites & Disclaimers
 

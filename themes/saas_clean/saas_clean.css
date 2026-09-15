@@ -1,7 +1,7 @@
 /* ==========================================================================
    SaaS Clean extension for G2 navigation skin
    |- Generated, edited, and testing by Jeremy O'Connell
-   |- Version: 1.0 (12 September 2026)
+   |- Version: 1.1 (15 September 2026)
    |- BSD 3-Clause License - Copyright (c) 2017, Jeremy OConnell
    |- Distributed using the BSD
    |- Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -880,7 +880,7 @@ table.dataface-view-table td {
 }
 
 /* ==========================================================================
-   TABLE QUICKLINKS Ã¢â‚¬â€ FLAT GOOGLE-STYLE NAVIGATION
+   TABLE QUICKLINKS ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬ï¿½ FLAT GOOGLE-STYLE NAVIGATION
    ========================================================================== */
 
 #xf-table-quicklinks {
@@ -1220,14 +1220,14 @@ table.dataface-view-table td {
 
 
 .prev-link a::before {
-    content: "‹" !important;
+    content: "â€¹" !important;
     font-size: 24px !important;
     line-height: 1 !important;
 }
 
 
 .next-link a::before {
-    content: "›" !important;
+    content: "â€º" !important;
     font-size: 24px !important;
     line-height: 1 !important;
 }
@@ -1416,7 +1416,7 @@ table.dataface-view-table td {
 }
 
 /* ==========================================================================
-   RECORD SUBTABS Ã¢â‚¬â€ REMOVE LEGACY DIVIDER
+   RECORD SUBTABS ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬ï¿½ REMOVE LEGACY DIVIDER
    ========================================================================== */
 
 .record-subtabs {
@@ -1451,7 +1451,7 @@ table.dataface-view-table td {
 }
 
 /* ==========================================================================
-   RECORD SEARCH Ã¢â‚¬â€ LEFT COLUMN
+   RECORD SEARCH ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬ï¿½ LEFT COLUMN
    ========================================================================== */
 
 #record-search {
@@ -1592,7 +1592,7 @@ table.dataface-view-table td {
 }
 
 /* ==========================================================================
-   ADVANCED SEARCH Ã¢â‚¬â€ RELATIONSHIP SUBSECTIONS
+   ADVANCED SEARCH ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬ï¿½ RELATIONSHIP SUBSECTIONS
    ========================================================================== */
 
 .xf-related-find-form-panel {
@@ -1718,7 +1718,6 @@ table.dataface-view-table td {
     font-weight: 500 !important;
 }
 
-
 .ui-dialog .ui-dialog-content h2 {
     margin: 24px 0 10px 0 !important;
     color: #202124 !important;
@@ -1742,4 +1741,252 @@ table.dataface-view-table td {
 
 .ui-dialog .ui-dialog-content li {
     margin-bottom: 7px !important;
+}
+
+/* ==========================================================================
+   LOGIN FORM
+   ========================================================================== */
+
+.login-prompt-wrapper {
+    width: 420px !important;
+    max-width: calc(100% - 40px) !important;
+    margin: 50px auto !important;
+    padding: 28px 32px !important;
+    box-sizing: border-box !important;
+    background: #ffffff !important;
+    border: 1px solid #dadce0 !important;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+    color: #202124 !important;
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   Login heading
+   -------------------------------------------------------------------------- */
+
+.login-prompt-wrapper > h1 {
+    margin: 0 0 24px 0 !important;
+    color: #ffffff !important;
+    font-size: 20px !important;
+    line-height: 28px !important;
+    font-weight: 500 !important;
+    border-radius: 7px;
+}
+
+/* --------------------------------------------------------------------------
+   Login fieldset
+   -------------------------------------------------------------------------- */
+
+.xataface-login-form fieldset {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+
+/* Hide the old fieldset legend */
+
+.xataface-login-form fieldset > legend {
+    display: none !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   Fields
+   -------------------------------------------------------------------------- */
+
+#Login-Username,
+#Login-Password {
+    margin: 0 0 16px 0 !important;
+}
+
+
+#Login-Username label,
+#Login-Password label {
+    display: block !important;
+    margin: 0 0 6px 0 !important;
+    color: #3c4043 !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+}
+
+
+#Login-Username input,
+#Login-Password input {
+    display: block !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    height: 40px !important;
+    padding: 8px 10px !important;
+    background: #ffffff !important;
+    border: 1px solid #dadce0 !important;
+    border-radius: 4px !important;
+    box-shadow: none !important;
+    color: #202124 !important;
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif !important;
+    font-size: 14px !important;
+}
+
+
+/* Focus state */
+
+#Login-Username input:focus,
+#Login-Password input:focus {
+    outline: none !important;
+    border-color: #5f6368 !important;
+    box-shadow: 0 0 0 1px #5f6368 !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   Submit button
+   -------------------------------------------------------------------------- */
+
+#Login-submit-panel {
+    margin-top: 22px !important;
+}
+
+
+#Login-submit {
+    height: 38px !important;
+    padding: 0 18px !important;
+    background: #ffffff !important;
+    border: 1px solid #dadce0 !important;
+    border-radius: 5px !important;
+    box-shadow: none !important;
+    color: #202124 !important;
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    cursor: pointer !important;
+}
+
+
+#Login-submit:hover {
+    background: #f1f3f4 !important;
+    border-color: #c5c7ca !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   Forgot password
+   -------------------------------------------------------------------------- */
+
+.login-prompt-wrapper > ul {
+    margin: 20px 0 0 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+}
+
+
+.login-prompt-wrapper > ul li {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+.login-prompt-wrapper > ul a {
+    color: #5f6368 !important;
+    font-size: 13px !important;
+    text-decoration: none !important;
+}
+
+
+.login-prompt-wrapper > ul a:hover {
+    color: #202124 !important;
+    text-decoration: underline !important;
+}
+
+/* ==========================================================================
+   FORGOT PASSWORD
+   ========================================================================== */
+
+.forgot-password-form {
+    box-sizing: border-box !important;
+}
+
+/* Header */
+
+.forgot-password-form h1 {
+    box-sizing: border-box !important;
+    width: 100% !important;
+    margin: 0 0 28px 0 !important;
+    padding: 20px 24px !important;
+    color: #ffffff !important;
+    background: #2f56a3 !important;
+    border-radius: 7px !important;
+    font-size: 22px !important;
+    font-weight: 500 !important;
+    line-height: 1.35 !important;
+    text-align: center;
+}
+
+/* Form controls */
+
+.forgot-password-form-fields {
+    text-align: center !important;
+}
+
+.forgot-password-form-fields #reset-password-by,
+.forgot-password-form-fields #email-or-username,
+.forgot-password-form-fields #submit-button {
+    box-sizing: border-box !important;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Selector */
+
+.forgot-password-form-fields #reset-password-by {
+    margin-bottom: 12px !important;
+}
+
+/* Email / username field */
+
+.forgot-password-form-fields #email-or-username {
+    margin-bottom: 18px !important;
+}
+
+/* Submit */
+
+.forgot-password-form-fields #submit-button {
+    margin-bottom: 22px !important;
+}
+
+/* Login link */
+
+.forgot-password-form-fields p {
+    margin: 0 !important;
+}
+
+.forgot-password-form-fields a,
+.forgot-password-form-fields a:visited {
+    color: #3c4043 !important;
+    text-decoration: none !important;
+}
+
+.forgot-password-form-fields a:hover {
+    color: #202124 !important;
+    text-decoration: underline !important;
 }
