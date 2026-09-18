@@ -10,6 +10,14 @@
 
 ---
 
+## Updates
+
+* Follow this page
+
+## Contact
+
+* Please start an "Issue" to invoke discussion.
+
 ## Installation
 
 ### Download
